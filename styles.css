@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    background: #0a0a0a;
+    color: #fff;
+
+}
+  
+.secao {
+    padding-top: 100px 0;
+    padding-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    gap:30px;
+    list-style: none;
+}
+
+li:hover {
+    opacity: 0.7;
+}
+
+li:active {
+    opacity: 0.1;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    min-height: 85vh;
+    
+}
+
+.principal h1 {
+    font-size: 80px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+
+}
+
+.principal h1 span {
+    color: #4d7cfe;
+}
+
+.principal p {
+    font-size: 20px;
+    color: #b2b2b2;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.botao {
+    display: inline-block;
+    background: #4d7cfe;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-right: 100px;
+}
+.botao:hover {
+    opacity: 0.8;
+}
+
+.botao:active {
+    opacity: 0.1;
+}
+
+
+.titulo-secao {
+    font-size: 42px;
+    margin-bottom: 60px;
+    position: relative;
+
+}
+
+.titulo-secao::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100px;
+    height: 4px;
+    background: #4d7cfe;
+}
+
+.grade-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    cursor: pointer;
+}
+
+.projeto-card {
+    background: #1b1b1b;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.img-projeto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.info-projeto {
+    padding: 20px;
+    
+}
+
+.info-projeto h3 {
+    margin-bottom: 10px;
+}
+
+.info-projeto p {
+    color: #b2b2b2;
+    margin-bottom: 15px;
+}
+
+.info-projeto {
+    color: #4d7cfe;
+    font-weight: 500;
+
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    max-width: 1300px;
+}
+
+.img-sobre {
+    height: 400px;
+    background-color: #161616;
+    border-radius: 10px;
+
+}
+
+.conteudo-sobre h2 {
+    margin-bottom: 20px;
+    color: #bbb;
+
+       span {
+        color: #a92bb4;
+    }
+}
+
+.habilidedes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+}
+
+.tag-habilidades {
+    background-color: rgba(77, 124, 254, 0.2);
+    color: #4d7cfe;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+
+}
+
+.botoes-contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.botao-contato {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-weight: 500px;
+    min-width: 160px;
+
+}
+.whatsapp { background-color: #25D366; }
+
+.email { background-color: #EA4335; }
+
+.linkedin { background-color: #0077B5; }
+
+.GitHub { background-color: #845f84; }
+
+footer {
+    padding: 25px 5%;
+    text-align: center;
+    border-top: 1px solid #222;
+    font-size: 12px;
+}
+
+.efeito-cursor {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.efeito-cursor:hover {
+    transform: translateY(-18px);
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+
+     header {
+        padding: 20px;
+    }                    
+}
+.botao-contato {
+    min-width: 150px;
+}
+
+
+.principal h1 {
+    font-size: 65px;
+}
+
+.principal p {
+    font-size: 18px;
+}
+
+.secao {
+    padding: 60px 25px;
+}
+
+.img-sobre {
+    height: auto;
+}
+
+/* Cor do fundo da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+  }
+  
+  /* Cor do trilho (a parte de fundo) */
+  ::-webkit-scrollbar-track {
+    background: #000; /* Preto */
+  }
+  
+  /* Cor da alça (a parte que você arrasta) */
+  ::-webkit-scrollbar-thumb {
+    background: #333; /* Cinza escuro */
+    border-radius: 5px; /* Deixar arredondado */
+  }
+  
+  /* Cor da alça ao passar o mouse */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .video-container {
+    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20vh;
+}  
+  
