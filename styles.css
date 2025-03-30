@@ -3,18 +3,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+
 }
 
 
 body {
     background: #0a0a0a;
     color: #fff;
-    
+
 
 
 }
-  
+
 .secao {
     padding-top: 100px 0;
     padding-left: 50px;
@@ -33,7 +33,7 @@ header {
 
 ul {
     display: flex;
-    gap:30px;
+    gap: 30px;
     list-style: none;
 }
 
@@ -50,7 +50,7 @@ li:active {
     align-items: center;
     margin-left: 30px;
     min-height: 85vh;
-    
+
 }
 
 .principal h1 {
@@ -85,6 +85,7 @@ li:active {
     cursor: pointer;
     margin-right: 100px;
 }
+
 .botao:hover {
     opacity: 0.8;
 }
@@ -134,7 +135,7 @@ li:active {
 
 .info-projeto {
     padding: 20px;
-    
+
 }
 
 .info-projeto h3 {
@@ -163,15 +164,15 @@ li:active {
 .img-sobre {
     height: 400px;
     background-color: #161616;
+    opacity: 0.7;
     border-radius: 10px;
-
 }
 
 .conteudo-sobre h2 {
     margin-bottom: 20px;
     color: #bbb;
 
-       span {
+    span {
         color: #a92bb4;
     }
 }
@@ -180,7 +181,6 @@ li:active {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-
 }
 
 .tag-habilidades {
@@ -191,7 +191,6 @@ li:active {
     margin-right: 15px;
     margin-bottom: 10px;
     font-size: 14px;
-
 }
 
 .botoes-contato {
@@ -201,8 +200,8 @@ li:active {
     justify-content: center;
     align-items: center;
     max-width: 800px;
-    margin: 0 auto;
 
+    margin: 0 auto;
 }
 
 .botao-contato {
@@ -215,13 +214,22 @@ li:active {
     min-width: 160px;
 
 }
-.whatsapp { background-color: #25D366; }
 
-.email { background-color: #EA4335; }
+.whatsapp {
+    background-color: #25D366;
+}
 
-.linkedin { background-color: #0077B5; }
+.email {
+    background-color: #EA4335;
+}
 
-.GitHub { background-color: #845f84; }
+.linkedin {
+    background-color: #0077B5;
+}
+
+.GitHub {
+    background-color: #845f84;
+}
 
 footer {
     padding: 25px 5%;
@@ -246,73 +254,72 @@ img {
 }
 
 ::-webkit-scrollbar {
-    width: 10px; /* Largura da barra de rolagem */
-  }
-  
-  /* Cor do trilho (a parte de fundo) */
-  ::-webkit-scrollbar-track {
-    background: #000; /* Preto */
-  }
-  
-  /* Cor da alça (a parte que você arrasta) */
-  ::-webkit-scrollbar-thumb {
-    background: #333; /* Cinza escuro */
-    border-radius: 5px; /* Deixar arredondado */
-  }
-  
-  /* Cor da alça ao passar o mouse */
-  ::-webkit-scrollbar-thumb:hover {
+    width: 10px;
+    /* Largura da barra de rolagem */
+}
+
+/* Cor do trilho (a parte de fundo) */
+::-webkit-scrollbar-track {
+    background: #000;
+    /* Preto */
+}
+
+/* Cor da alça (a parte que você arrasta) */
+::-webkit-scrollbar-thumb {
+    background: #333;
+    /* Cinza escuro */
+    border-radius: 5px;
+    /* Deixar arredondado */
+}
+
+/* Cor da alça ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
     background: #555;
-  }
+}
 
+@media (max-width: 700px) {
 
-
-
-@media (max-width: 768px) {
-
-     header {
+    header {
         padding: 20px;
-    }                    
+    }
 
-.botao-contato {
-    min-width: 140px;
+    .botao-contato {
+        min-width: 140px;
+    }
+
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .principal h1 {
+
+        font-size: 60px;
+    }
+
+    .principal p {
+        font-size: 18px;
+    }
+
+    .secao {
+        padding: 60px 25px;
+    }
+
+    .img-sobre {
+        height: auto;
+    }
+
+    .sobre {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+
 }
-
-.cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-.principal h1 {
-
-    font-size: 60px;
-}
-
-.principal p {
-    font-size: 18px;
-}
-
-.secao {
-    padding: 60px 25px;
-}
-
-.img-sobre {
-    height: auto;
-}
-.sobre {
-    grid-template-columns: 1fr;
-    gap: 30px;
-}
-
-
-}    
-
-
-
 
 .video-container {
     opacity: 0.1;
@@ -322,7 +329,8 @@ img {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+    z-index: -1;
+    /* Coloca o vídeo atrás do conteúdo */
 }
 
 .video-container video {
@@ -334,5 +342,4 @@ img {
     text-align: center;
     font-size: 2rem;
     padding-top: 20vh;
-}  
-  
+}
