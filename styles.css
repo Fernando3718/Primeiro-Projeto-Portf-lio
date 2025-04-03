@@ -212,6 +212,8 @@ li:active {
     border-radius: 10px;
     font-weight: 500px;
     min-width: 160px;
+    text-decoration: none;
+    color: white;
 
 }
 
@@ -228,7 +230,7 @@ li:active {
 }
 
 .GitHub {
-    background-color: #845f84;
+    background-color: #333;
 }
 
 footer {
