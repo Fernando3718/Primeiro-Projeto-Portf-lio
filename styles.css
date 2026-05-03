@@ -189,6 +189,7 @@ li:active {
     color: #bbb;
     span {
         color: #39d0fa;
+    }
 }
 .habilidedes {
     display: flex;
