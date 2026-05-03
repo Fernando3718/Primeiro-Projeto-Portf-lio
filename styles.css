@@ -184,7 +184,12 @@ li:active {
     }
 
 }
-
+.conteudo-sobre h3 {
+    margin-bottom: 20px;
+    color: #bbb;
+    span {
+        color: #39d0fa;
+}
 .habilidedes {
     display: flex;
     flex-wrap: wrap;
